@@ -186,12 +186,25 @@ body > section:last-child{
     overflow: visible;
 }
 
+.section-bg-reverse {
+    background-image: url("./imagini/section-bg-reversed.svg");
+    
+}
+
 .section-3-row > h2 {
     font-weight: 700;
     font-size: 2em;
     line-height: 48px;
     text-align: center;
     margin: 20px;
+}
+
+.section-3-row > p {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    width: 60%;
 }
 
 .section-row-4-cols{
@@ -262,6 +275,34 @@ body > section:last-child{
     margin-right: 30px;
 }
 
+.avatar-icon{
+    height: 100px;
+    width: 100px;
+}
+
+.chat-box {
+    background-size: cover;
+    background-position-y:center ;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin-left: 16px;
+    width: auto;
+    padding: 10px;
+    overflow: visible;
+}
+
+.chat-box-left{
+    background-image: url("./imagini/chat-box-left.svg");
+    margin-left: 16px;
+}
+.chat-box-right{
+    background-image: url("./imagini/chat-box-right.svg");
+    margin-right: 16px;
+}
+
+.chat-box-wrapper-right{
+    flex-direction: row-reverse;
+}
 
 @media screen and (max-width: 890px) {
     .menu-icon {
