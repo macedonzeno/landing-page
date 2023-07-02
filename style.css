@@ -281,12 +281,11 @@ body > section:last-child{
 }
 
 .chat-box {
-    background-size: cover;
-    background-position-y:center ;
-    text-align: center;
+    background-size: contain;
+    background-position:center ;
     background-repeat: no-repeat;
-    margin-left: 16px;
     width: auto;
+    text-align: center;
     padding: 10px;
     overflow: visible;
 }
@@ -302,6 +301,14 @@ body > section:last-child{
 
 .chat-box-wrapper-right{
     flex-direction: row-reverse;
+}
+
+.chat-box-container{
+    width: 100%;
+}
+
+.chat-box > p {
+    padding: 10px;
 }
 
 @media screen and (max-width: 890px) {
@@ -372,6 +379,19 @@ body > section:last-child{
         justify-content: center;
         align-items: center;
     }
+
+    .chat-box-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .chat-box-container > .content-left-col {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -412,6 +432,8 @@ body > section:last-child{
         justify-content: center;
         align-items: center;
     }
+
+ 
 
 
 }
